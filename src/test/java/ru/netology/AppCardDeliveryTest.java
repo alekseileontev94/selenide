@@ -24,7 +24,7 @@ public class AppCardDeliveryTest {
     @Test
     public void shouldTestSuccessRegistrationForm() {
         Selenide.open("http://localhost:9999");
-        $("[data-test-id='city'] input").setValue("Югорск");
+        $("[data-test-id='city'] input").setValue("Казань");
         String planningDate = generateDate(3, "dd.MM.yyyy");
         $("[data-test-id='date'] input").setValue("3.06.2024");
         $("[data-test-id='name'] input").setValue("Алексей Леонтьев");
